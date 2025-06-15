@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recomendación - Amor a Primera Vista</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Amor a Primera Vista</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="#">Categorías ▼</a>
+          <ul class="submenu">
+            <li><a href="categoria1.html">Romance</a></li>
+            <li><a href="categoria2.html">Misterio</a></li>
+            <li><a href="categoria3.html">Fantasía</a></li>
+          </ul>
+        </li>
+        <li><a href="libros.html">Libros</a></li>
+        <li><a href="recomendacion.html" class="active">Recomendación</a></li>
+        <li><a href="quejas.html">Quejas</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h2>Pide una Recomendación</h2>
+    <form action="gracias.html" method="post">
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="correo">Tu correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="genero">Género que te gusta:</label>
+      <select id="genero" name="genero">
+        <option>Romance</option>
+        <option>Misterio</option>
+        <option>Fantasía</option>
+      </select>
+
+      <label for="comentario">¿Qué tipo de historia te interesa?</label>
+      <textarea id="comentario" name="comentario"></textarea>
+
+      <input type="submit" value="Enviar recomendación" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Librería Amor a Primera Vista. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

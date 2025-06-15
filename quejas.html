@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quejas - Amor a Primera Vista</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Amor a Primera Vista</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="#">Categorías ▼</a>
+          <ul class="submenu">
+            <li><a href="categoria1.html">Romance</a></li>
+            <li><a href="categoria2.html">Misterio</a></li>
+            <li><a href="categoria3.html">Fantasía</a></li>
+          </ul>
+        </li>
+        <li><a href="libros.html">Libros</a></li>
+        <li><a href="recomendacion.html">Recomendación</a></li>
+        <li><a href="quejas.html" class="active">Quejas</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h2>Quejas y Sugerencias</h2>
+    <form action="gracias.html" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Librería Amor a Primera Vista. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
